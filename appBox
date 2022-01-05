@@ -1,0 +1,37 @@
+appBox
+	:enuOrientation = Landscape
+
+  .sqrBox
+	  :numHeight = 20
+	  :enuColor =  
+	  :numX = 5
+	  :numY = 10
+
+	  .numLastX
+	  .numLastY
+
+  .enuBoxState = Ready
+	  :numX = 5
+	  :numY = 5
+
+  .ruleBoxClicked
+	  :actInstructions
+      If    .enuBoxState =          |	Ready     | Dropped!
+            .sqrBox:boolClicked =   |	Yes       |	Yes
+      Then  .enuBoxState =          | Clicked!	| Clicked!
+
+  .ruleBoxDragged
+	  :actInstructions
+      If	  .enuBoxState =		                |           | Dragging…
+          	.sqrBox:boolDragged =	            | Yes	      | No
+      Then	.enuBoxState =	                  | Dragging… | Dropped!
+	          .sqrBox.numLastX = .sqrBox.numX   | Do        | Do 
+            .sqrBox.numLastY = .sqrBox.numY
+
+  .rulePressedEscape
+	  :actInstructions
+      If    Device.Keyboard.Esc:boolPressed =	  | Yes
+      Then	.enuBoxState = Cancelled!           | Do
+            .sqrBox.numX = .sqrBox.numLastX
+            .sqrBox.numY = .sqrBox.numLastY
+
