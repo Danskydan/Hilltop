@@ -10,8 +10,21 @@ Here’s an example:
 ##
 ![alt text](/assets/images/GuessingGame1.png)
 ![alt text](/assets/images/GuessingGame2.png)
-##
 
-**_Core Concepts_**
+## **_Core Concepts_**
 
 Consider the following spreadsheet application:
+
+![alt text](/assets/images/CoreConcepts1.png)
+
+This application might be represented in text as follows:
+
+      B2 = ‘Fahrenheit
+  
+      B3 = 80
+  
+      C2 = ‘Celsius
+  
+      C3 = ROUND(B3-32*(5/9),0)
+
+But what about this application:
