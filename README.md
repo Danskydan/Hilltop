@@ -1,6 +1,6 @@
 # Hilltop
 
-Hilltop (**_H_** ow **_I_** 'd **_L_** ike/ **_L_** ove **_TO_** **_P_** rogram) is text-based, general-purpose programming language and model that borrows concepts from the spreadsheet programming model. 
+Hilltop is text-based, general-purpose programming language and model that borrows concepts from spreadsheet programming. 
 
 A Hilltop application is described as a hierarchy of typed cells and cell attributes. Child cells have a ‘.’ prefix, and cell attributes have a ‘:’ prefix. Literal values are color-highlighted. 
 
