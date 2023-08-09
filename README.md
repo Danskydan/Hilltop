@@ -35,7 +35,7 @@ Without the spreadsheet editor interface or named rows and columns, cell names a
       	Typeface = Calibri
       	FontSize = 12
       	Alignment = Left
-      	X_coordinate = 10		//don’t worry about the units for now
+      	X_coordinate = 10   //don’t worry about the units for now
       	Y_coordinate = 10
       Fahrenheit_value
       	Value = 80
@@ -93,17 +93,17 @@ Hilltop uses prefixes to identify cell and attribute types, as well as what valu
       	numValue = numfunRound(numFahrenheit_value-32*(5/9),0)
       	…
 
-In Hilltop, a cell’s type only needs to be indicated once by the programmer. Thereafter, the Hilltop program editor automatically fills in type prefixes, although the programmer may hide them from view, if desired. Attribute and function return types are predefined and therefore require no prefix-based type-ing by the programmer.
+In Hilltop, a cell’s type only needs to be indicated once by the programmer. Thereafter, the Hilltop program editor will automatically fill in type prefixes, although the programmer may hide them from view, if desired. Attribute and function return types are predefined and therefore require no prefix-based type-ing by the programmer.
 
-In place of rows and columns of cells, Hilltop organizes cells hierarchically under a root cell that represents the application itself (and that has its own attributes). Child cells are distinguished from their attributes by using an additional ‘.’ prefix for cells and a ‘:’ prefix for attributes. Indentation is also used, which the Hilltop program editor handles automatically. For example:
+In place of rows and columns of cells, Hilltop organizes cells hierarchically under a root cell that represents the application itself (and that has its own attributes). Child cells are distinguished from their attributes by using an additional ‘.’ prefix for cells and a ‘:’ prefix for attributes. Indentation is also used, which the Hilltop program editor will handle automatically. For example:
 
       appTempConverter
       	.txtFahrenheit_label
       		:txtValue = Fahrenheit
       		:numX = 10
       		:numY = 10
-      	.numboxFahrenheit_value	// ‘numbox’ indicates that this cell is for numeric user input
-      		:numValue = 80		// 80 is provided as a starting value
+      	.numboxFahrenheit_value   // ‘numbox’ indicates that this cell is for numeric user input
+      		:numValue = 80    // 80 is provided as a starting value
       		:numX = 10
       		:numY = 15
       		:numWidth = 5
