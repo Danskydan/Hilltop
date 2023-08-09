@@ -8,8 +8,7 @@ An application is programmed by naming cells and providing formulas (i.e., code)
 
 Here’s an example:
 ##
-![alt text](/assets/images/GuessingGame1.png)
-![alt text](/assets/images/GuessingGame2.png)
+![alt text](/assets/images/GuessingGame.png)
 
 ## **_Core Concepts_**
 
@@ -143,8 +142,7 @@ Here is the final Hilltop code (color-highlighting of literal values omitted):
 
 Attribute values may be expressed using one or more instructions. Where more than one instruction is needed, they may be placed in a `:txtInstructions` attribute, such as in the Guessing Game example:
 
-![alt text](/assets/images/GuessingGame1.png)
-![alt text](/assets/images/GuessingGame2.png)
+![alt text](/assets/images/GuessingGame.png)
 
 `:txtInstructions` is a sub-attribute of any attribute, and is also an attribute of `rulePlayAgain`, which is a rule-type cell.
 
