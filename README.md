@@ -6,7 +6,7 @@ A Hilltop application is described as a hierarchy of typed cells and cell attrib
 
 An application is programmed by naming cells and providing formulas (i.e., code) for cell attrributes. As in a spreadsheet, cell attribute code is automatically reevaluated as the values of their dependencies change. 
 
-Here’s an example:
+Here’s a taste:
 ##
 ![alt text](/assets/images/GuessingGame.png)
 
