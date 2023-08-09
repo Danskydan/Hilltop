@@ -11,3 +11,7 @@ Here’s an example:
 ![alt text](/assets/images/GuessingGame1.png)
 ![alt text](/assets/images/GuessingGame2.png)
 ##
+
+**_Core Concepts_**
+
+Consider the following spreadsheet application:
