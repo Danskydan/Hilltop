@@ -137,15 +137,14 @@ Here is the final Hilltop code (color-highlighting of literal values omitted):
       	.txtCelsius_label = Celsius
       		:numX = 20
       		:numY = 10
+            .numboxCelsius_value = numfunRound(.numboxFahrenheit_value:numValue-32*(5/9),0)
       		:numX = 20
       		:numY = 15
 
 Cells may be listed in any order under their common, immediate parent. Thus, the following is functionally equivalent to the above example:
 
       appTempConverter
-        	.txtCelsius_label = Celsius
-      		:numX = 20
-      		:numY = 10
+            .numboxCelsius_value = numfunRound(.numboxFahrenheit_value:numValue-32*(5/9),0)
       		:numX = 20
       		:numY = 15
       	.numboxFahrenheit_value = 80
@@ -154,6 +153,9 @@ Cells may be listed in any order under their common, immediate parent. Thus, the
       		:numWidth = 5
             .txtFahrenheit_label = Fahrenheit
       		:numX = 10
+      		:numY = 10
+            .txtCelsius_label = Celsius
+      		:numX = 20
       		:numY = 10
 
 Attribute values may be expressed using one or more instructions. Where more than one instruction is needed, they may be placed in a `:txtInstructions` attribute, such as in the Guessing Game example:
