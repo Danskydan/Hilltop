@@ -102,7 +102,7 @@ In place of rows and columns of cells, Hilltop organizes cells hierarchically un
       		:numX = 10
       		:numY = 10
       	.numboxFahrenheit_value   // ‘numbox’ indicates that this cell is for numeric user input
-      		:numValue = 80    // 80 is provided as a starting value
+      		:numValue = 80    // 80 is provided as a default value
       		:numX = 10
       		:numY = 15
       		:numWidth = 5
