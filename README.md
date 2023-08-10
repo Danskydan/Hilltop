@@ -34,50 +34,50 @@ Without the spreadsheet editor interface or named rows and columns, cell names a
       	Typeface = Calibri
       	FontSize = 12
       	Alignment = Left
-      	X_coordinate = 10   //don’t worry about the units for now
-      	Y_coordinate = 10
+      	X = 10   //don’t worry about the units for now
+      	Y = 10
       Fahrenheit_value
       	Value = 80
       	Typeface = Calibri
       	FontSize = 12
       	Alignment = Left
       	DecimalPlaces = 0
-      	X_coordinate = 10
-      	Y_coordinate = 15
+      	X = 10
+      	Y = 15
       Celsius_label
       	Value = ‘Celsius
       	Typeface = Calibri
       	FontSize = 12
       	Alignment = Left
-      	X_coordinate = 20
-      	Y_coordinate = 10
+      	X = 20
+      	Y = 10
       Celsius_value
       	Value = ROUND(Fahrenheit_value-32*(5/9),0)
       	Typeface = Calibri
       	FontSize = 12
       	Alignment = Left
       	DecimalPlaces = 0
-      	X_coordinate = 20
-      	Y_coordinate = 15
+      	X = 20
+      	Y = 15
 
 In a spreadsheet, many cell attributes, such as typeface, font size, alignment, and decimal places, have default values that may be ignored or changed by the user. Likewise, in Hilltop cell attributes need only be listed when changing a default value or where no default value exists. Thus, the text description above may be simplified as follows:
 
       Fahrenheit_label
       	Value = ‘Fahrenheit
-      	X_coordinate = 10
-      	Y_coordinate = 10
+      	X = 10
+      	Y = 10
       Fahrenheit_value
       	Value = 80
-      	X_coordinate = 10
-      	Y_coordinate = 15
+      	X = 10
+      	Y = 15
       Celsius_label
       	Value = ‘Celsius
-      	X_coordinate = 20
-      	Y_coordinate = 10
+      	X = 20
+      	Y = 10
       Celsius_value
       	Value = ROUND(Fahrenheit_value-32*(5/9),0)
-      	X_coordinate = 20
-      	Y_coordinate = 15
+      	X = 20
+      	Y = 15
 
 Spreadsheet cell attributes vary by cell type. For example, decimal places may be specified for numeric-type cells but not for date-type cells, while date formats may be specified for date-type cells but not for text-type cells. Hilltop cell attributes also vary by cell type.
 
