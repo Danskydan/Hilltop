@@ -4,7 +4,7 @@ Hilltop is text-based, general-purpose programming language and model that borro
 
 A Hilltop application is described as a hierarchy of typed cells and cell attributes. Child cells have a ‘.’ prefix, and cell attributes have a ‘:’ prefix. Literal values are color-highlighted. 
 
-An application is programmed by naming cells and providing formulas (i.e., code) for cell attrributes. As in a spreadsheet, cell attribute code is automatically reevaluated as the values of their dependencies change. 
+An application is programmed by naming cells and providing formulas (i.e., code) for cell attrributes. As in a spreadsheet, cell attribute code is automatically reevaluated when their dependencies receive values. 
 
 Here’s a taste:
 ##
@@ -108,7 +108,7 @@ In place of rows and columns of cells, Hilltop organizes cells hierarchically un
       		:numWidth = 5
       		…
 
-As in a spreadsheet, Hilltop cells are reactive (i.e., their values are automatically reevaluated) to changes in the value of cells on which they depend. Thus, ‘sibling’ cells may be listed in any order under their common, immediate parent. But unlike a spreadsheet, where only a cell’s value may depend on the value of another cell, in Hilltop the value of any cell attribute may depend on the value of any other cell attribute. For example, a cell’s font size could be made to depend on another cell’s numeric value as follows:
+As in a spreadsheet, Hilltop cells are reactive (i.e., their values are automatically reevaluated) when cells on which they depend receive a value. But unlike a spreadsheet, where only a cell’s value may depend on the value of another cell, in Hilltop the value of any cell attribute may depend on the value of any other cell attribute. For example, a cell’s font size could be made to depend on another cell’s numeric value as follows:
 
       .numboxCelsius_value
       	:numFontSize = numfunRound(.numboxFahrenheit_value)
@@ -140,13 +140,29 @@ Here is the final Hilltop code (color-highlighting of literal values omitted):
       		:numX = 20
       		:numY = 15
 
+Cells may be listed in any order under their common, immediate parent. Thus, the following is functionally equivalent to the above example:
+
+      appTempConverter
+        	.txtCelsius_label = Celsius
+      		:numX = 20
+      		:numY = 10
+      		:numX = 20
+      		:numY = 15
+      	.numboxFahrenheit_value = 80
+      		:numX = 10
+      		:numY = 15
+      		:numWidth = 5
+            .txtFahrenheit_label = Fahrenheit
+      		:numX = 10
+      		:numY = 10
+
 Attribute values may be expressed using one or more instructions. Where more than one instruction is needed, they may be placed in a `:txtInstructions` attribute, such as in the Guessing Game example:
 
 ![alt text](/assets/images/GuessingGame.png)
 
 `:txtInstructions` is a sub-attribute of any attribute, and is also an attribute of `rulePlayAgain`, which is a rule-type cell.
 
-The instructions in `:txtInstructions` are evaluated whenever a change is made to the value of any attribute that is **_evaluated_** within `:txtInstructions`.
+The instructions in `:txtInstructions` are evaluated whenever any attribute that is **_evaluated_** within `:txtInstructions` receives a value. Thus, in the above example, `.txtAnswer:txtValue:txtInstructions` is evaluated whenever `.numboxGuess` receives a value.
 
 The Hilltop program editor supports If-Then tables as shown above, as well as classic If-Then statements and nested If-Then statements.
 
