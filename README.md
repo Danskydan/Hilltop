@@ -2,11 +2,10 @@
 
 Hilltop is a text-based, general-purpose programming language and model that borrows concepts from spreadsheet programming. 
 
-A Hilltop application is described as a hierarchy of typed cells and cell attributes. Child cells have a ‘.’ prefix, and cell attributes have a ‘:’ prefix. Literal values are color-highlighted. 
+A Hilltop application is described as a hierarchy of typed cells and cell attributes. An application is programmed by naming cells and providing formulas (i.e., code) for cell attrributes. As in a spreadsheet, cell attribute code is automatically reevaluated when their dependencies receive values. 
 
-An application is programmed by naming cells and providing formulas (i.e., code) for cell attrributes. As in a spreadsheet, cell attribute code is automatically reevaluated when their dependencies receive values. 
+In the example below, child cells have a ‘.’ prefix, cell attributes have a ‘:’ prefix, and literal values are color-highlighted. 
 
-Here’s a taste:
 ##
 ![alt text](/assets/images/GuessingGame.png)
 
