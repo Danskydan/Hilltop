@@ -141,7 +141,7 @@ Here is the final Hilltop code (color-highlighting of literal values omitted):
       		:numX = 20
       		:numY = 15
 
-Cells may be listed in any order under their common, immediate parent. Thus, the following is functionally equivalent to the above example:
+Cells may be listed in any order under their common parent. Thus, the following is functionally equivalent to the above example:
 
       appTempConverter
             .numboxCelsius_value = numfunRound(.numboxFahrenheit_value:numValue-32*(5/9),0)
