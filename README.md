@@ -15,7 +15,7 @@ Consider the following spreadsheet application:
 
 ![alt text](/assets/images/CoreConcepts1.png)
 
-This application might be represented in text as follows:
+This application could be represented in text as follows:
 
       B2 = ‘Fahrenheit
       B3 = 80
