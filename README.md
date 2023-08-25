@@ -26,7 +26,7 @@ But what about this application:
 
 ![alt text](/assets/images/CoreConcepts2.png)
 
-Without the spreadsheet editor interface or named rows and columns, cell names and other cell attributes such as screen position, typeface, font size, alignment, and decimal places, are all described using text as follows:
+Without the spreadsheet editor interface or named rows and columns, cell names and other cell attributes such as screen position, typeface, font size, alignment, and decimal places, could be described using text as follows:
 
       Fahrenheit_label
       	Value = ‘Fahrenheit
