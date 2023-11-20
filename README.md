@@ -23,7 +23,7 @@ But what about this application:
 
 ![alt text](/assets/images/CoreConcepts2.png)
 
-Without the spreadsheet interface or named rows and columns as a reference, cell names and other cell attributes such as the cell's value (which is just one of many cell attributes), screen position, typeface, font size, alignment, and decimal places, could be described using text as follows:
+Without the spreadsheet interface and its row and column labels, cell names and other cell attributes such as the cell's value -- which is just one of many cell attributes including screen position, typeface, font size, alignment, and decimal places -- could be described using text as follows:
 
       Fahrenheit_label
       	Value = ‘Fahrenheit
