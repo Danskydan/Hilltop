@@ -161,7 +161,7 @@ Attribute values may be expressed using one or more instructions. Where more tha
 
 ![alt text](/assets/images/GuessingGame.png)
 
-The Hilltop editor uses color-highlighting to distinguish literal values, in place of quotes that most other programming languages use.
+The Hilltop editor uses highlighting to distinguish literal values, in place of quotes that most other programming languages use.
 
 `:txtInstructions` is a sub-attribute of any attribute, and is also an attribute of `rulePlayAgain`, which is a rule-type cell.
 
