@@ -56,7 +56,7 @@ Without the spreadsheet interface and its row and column labels, cell names and 
       	X = 20
       	Y = 15
 
-In a spreadsheet, many cell attributes, such as typeface, font size, alignment, and decimal places, have default values that may be ignored or changed by the user. Thus, cell attributes need only be listed when changing a default value or where no default value exists. The text description above may therefore be simplified as follows:
+In a spreadsheet, many cell attributes, such as typeface, font size, alignment, and decimal places, have default values. Thus, cell attributes need only be listed when changing a default value or where no default value exists. The text description above may therefore be simplified as follows:
 
       Fahrenheit_label
       	Value = ‘Fahrenheit
