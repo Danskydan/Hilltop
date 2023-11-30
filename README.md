@@ -4,7 +4,9 @@ Hilltop is a text-based, general-purpose programming language. Hilltop provides 
 
 A Hilltop application is programmed by providing a text-based description of cells and their attributes. Cell attribute values are expressed as literal values or as one or more instructions. As with spreadsheet formulas, cell attribute instructions are automatically reevaluated when their dependencies receive values. 
 
-A Hilltop application is programmed using a Hilltop-compatible editor.
+A Hilltop application will be programmed using a Hilltop-compatible editor.
+
+There is currently no implementation of Hilltop, as its creator is a designer, but not a builder.
 
 ## **_Core Concepts_**
 
@@ -154,8 +156,7 @@ Cells may be listed in any order under their common parent. Thus, the following 
       		:numX = 20
       		:numY = 10
 
-##
-**_Guessing Game_**
+## **_Guessing Game_**
 
 Attribute values may be expressed using one or more instructions. Where more than one instruction is needed, they may be placed in a `:txtInstructions` attribute, such as in the following Guessing Game example:
 
@@ -171,8 +172,7 @@ The Hilltop program editor supports If-Then tables as shown above, as well as cl
 
 Boolean-type attribute values may be assigned ‘Yes/No’ or ‘True/False’.
 
-##
-**_Flappy Bird_**
+## **_Flappy Bird - in under 80 LOC!_**
 
 In a spreadsheet, a cell is “instantiated” when its value or other attributes are provided by the programmer or its value is referenced by another cell or macro. In Hilltop, one instance of each named cell is created at runtime unless otherwise specified. Multiple instances of a cell may be created using an `<n>` or `<n..m>` suffix after the cell name. Named cell instances may also be specified using `<name>`. A cell template or “metacell” may be defined using `<>`, from which cells may be created programmatically using the `Create` command. `<*>` is used to refer to all instances of a cell.
 
