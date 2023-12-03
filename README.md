@@ -90,7 +90,7 @@ Hilltop uses prefixes such as 'txt' and 'num' to identify cell and attribute typ
       	numValue = numfunRound(numFahrenheit_value-32*(5/9),0)
       	…
 
-In Hilltop, a cell’s type is indicated once by the programmer. Thereafter, the Hilltop program editor will automatically fill in type prefixes, although the programmer may hide them from view, if desired. Attribute and function return types are predefined and therefore require no prefix-based type-ing by the programmer.
+In Hilltop, a cell’s type is indicated once by the programmer. Thereafter, the Hilltop program editor will automatically fill in type prefixes, which may be hidden from view, if desired. Attribute and function return types are predefined and therefore require no prefix-based type-ing by the programmer.
 
 In place of rows and columns of cells, Hilltop organizes cells hierarchically under a root cell that represents the application itself (and that has its own attributes). Child cells are distinguished from their attributes by using an additional ‘.’ prefix for cells and a ‘:’ prefix for attributes. Indentation is also used, which the Hilltop program editor will handle automatically. For example:
 
