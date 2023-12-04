@@ -2,7 +2,7 @@
 
 Hilltop is a text-based, general-purpose programming language. Hilltop implements a programming paradigm that borrows concepts from spreadsheet programming.
 
-A Hilltop application is programmed by providing a text-based description of cells and their attributes. Cell attribute values are expressed as literal values or as one or more instructions. As with spreadsheet formulas, cell attribute instructions are automatically reevaluated when their dependencies receive values. 
+A Hilltop application is programmed by providing a text-based description of cells and their attributes. Cell attribute values are expressed as literal values or as one or more instructions. As with spreadsheet formulas, cell attribute instructions are automatically reevaluated when their precedent cell attributes receive values. 
 
 A Hilltop application will be programmed using a Hilltop-compatible editor.
 
