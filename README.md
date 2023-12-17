@@ -172,7 +172,7 @@ The Hilltop program editor supports If-Then tables as shown above, as well as cl
 
 Boolean-type attribute values may be assigned ‘Yes/No’ or ‘True/False’.
 
-## **_Flappy Bird - in under 80 LOC!_**
+## **_Flappy Bird_**
 
 In a spreadsheet, a cell is “instantiated” when its value or other attributes are provided by the programmer or its value is referenced by another cell or macro. In Hilltop, one instance of each named cell is created at runtime unless otherwise specified. Multiple instances of a cell may be created using an `<n>` or `<n..m>` suffix after the cell name. Named cell instances may also be specified using `<name>`. A cell template or “metacell” may be defined using `<>`, from which cells may be created programmatically using the `Create` command. `<*>` is used to refer to all instances of a cell.
 
