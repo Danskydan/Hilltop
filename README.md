@@ -180,10 +180,36 @@ In the following Flappy Bird game example, `.vgpColumns<>` and `.imgColumn<>` ar
 
 `.vgpColumns` and `.vgpGameOverText` are visual-group-type cells under which multiple child cells may be grouped and that may include default attribute values for group members.
 
+A design walkthru of the Flappy Bird game appears below. 
+
 ![alt text](/assets/images/FlappyWalkThru0.png)
 ![alt text](/assets/images/FlappyWalkThru1.png)
-![alt text](/assets/images/FlappyBird1.png)
-![alt text](/assets/images/FlappyBird2.png)
-![alt text](/assets/images/FlappyBird3.png)
+![alt text](/assets/images/FlappyWalkThru2.png)
+![alt text](/assets/images/FlappyWalkThru3.png)
+![alt text](/assets/images/FlappyWalkThru4.png)
+![alt text](/assets/images/FlappyWalkThru5.png)
+![alt text](/assets/images/FlappyWalkThru6.png)
+![alt text](/assets/images/FlappyWalkThru7.png)
+![alt text](/assets/images/FlappyWalkThru8.png)
+![alt text](/assets/images/FlappyWalkThru9.png)
+![alt text](/assets/images/FlappyWalkThru10.png)
+![alt text](/assets/images/FlappyWalkThru11.png)
+![alt text](/assets/images/FlappyWalkThru12.png)
+![alt text](/assets/images/FlappyWalkThru13.png)
+![alt text](/assets/images/FlappyWalkThru14.png)
+![alt text](/assets/images/FlappyWalkThru15.png)
+![alt text](/assets/images/FlappyWalkThru16.png)
+![alt text](/assets/images/FlappyWalkThru17.png)
+![alt text](/assets/images/FlappyWalkThru18.png)
+![alt text](/assets/images/FlappyWalkThru19.png)
+![alt text](/assets/images/FlappyWalkThru20.png)
+![alt text](/assets/images/FlappyWalkThru21.png)
+![alt text](/assets/images/FlappyWalkThru22.png)
+![alt text](/assets/images/FlappyWalkThru23.png)
+
+
+<!-- ![alt text](/assets/images/FlappyBird1.png) -->
+<!-- ![alt text](/assets/images/FlappyBird2.png) -->
+<!-- ![alt text](/assets/images/FlappyBird3.png) -->
 
 _To be continued..._
