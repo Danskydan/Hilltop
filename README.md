@@ -182,7 +182,7 @@ In the following Flappy Bird game example, `.vgpColumns<>` and `.imgColumn<>` ar
 
 ![alt text](/assets/images/FlappyBird1.png)
 
-https://github.com/Danskydan/Hilltop/blob/main/Flappy%20Bird%20Design%20Walk.html
+(https://github.com/Danskydan/Hilltop/blob/main/Flappy%20Bird%20Design%20Walk.html "Flappy Burd Design Walkthru")
 ![alt text](/assets/images/FlappyBird2.png)
 ![alt text](/assets/images/FlappyBird3.png)
 
