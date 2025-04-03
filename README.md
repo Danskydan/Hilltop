@@ -180,6 +180,8 @@ In the following Flappy Bird game example, `.vgpColumns<>` and `.imgColumn<>` ar
 
 `.vgpColumns` and `.vgpGameOverText` are visual-group-type cells under which multiple child cells may be grouped and that may include default attribute values for group members.
 
+![alt text](/assets/images/FlappyWalkThru0.png)
+![alt text](/assets/images/FlappyWalkThru1.png)
 ![alt text](/assets/images/FlappyBird1.png)
 ![alt text](/assets/images/FlappyBird2.png)
 ![alt text](/assets/images/FlappyBird3.png)
